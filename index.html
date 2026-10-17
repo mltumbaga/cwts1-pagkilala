@@ -103,6 +103,8 @@ h3 { color: var(--dark); }
   border-radius: 12px;
   padding: 25px;
 }
+.photo-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; margin:12px 0; }
+.photo-grid img { width:100%; aspect-ratio:4/3; object-fit:cover; border-radius:7px; background:#eadde0; }
 .portrait-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -158,7 +160,9 @@ footer strong { color: var(--maroon); }
   nav { align-items: flex-start; flex-direction: column; }
   nav a { margin: 0 12px 0 0; }
   .hero { padding: 65px 24px; }
-  .portrait-grid { grid-template-columns: 1fr; }
+  .photo-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; margin:12px 0; }
+.photo-grid img { width:100%; aspect-ratio:4/3; object-fit:cover; border-radius:7px; background:#eadde0; }
+.portrait-grid { grid-template-columns: 1fr; }
   .position { grid-column: auto; }
   h2 { font-size: 1.7rem; }
 }
@@ -175,6 +179,7 @@ footer strong { color: var(--maroon); }
   <div class="brand">CWTS 1 ePortfolio</div>
   <div>
     <a href="#portrait">Portrait</a>
+    <a href="#photo-evidence">Photos</a>
     <a href="#reflection">Reflection</a>
     <a href="#references">References</a>
   </div>
@@ -200,8 +205,7 @@ footer strong { color: var(--maroon); }
   <div class="section-label">Introduction</div>
   <h2>My Starting Point</h2>
   <p class="intro">
-    This ePortfolio examines my workplace community at Beacon Services, Inc.
-    and how my experiences as a Virtual Assistant shape my understanding of citizenship.
+    This ePortfolio examines the ICT community I belonged to at San Mariano National High School MAIN and how leadership, technical service, and peer learning shaped my understanding of citizenship.
     It connects my observations of community life with my responsibilities,
     personal goals, and potential contributions.
   </p>
@@ -209,7 +213,7 @@ footer strong { color: var(--maroon); }
     <p><strong>Name:</strong> Mark Anthony Tumbaga</p>
     <p><strong>Program:</strong> Associate of Science in Information Technology (ASIT), UP Open University</p>
     <p><strong>Course:</strong> CWTS 1</p>
-    <p><strong>Community featured:</strong> My workplace community at Beacon Services, Inc.</p>
+    <p><strong>Community featured:</strong> My ICT Community at San Mariano National High School MAIN</p>
   </div>
 </section>
 
@@ -220,51 +224,47 @@ footer strong { color: var(--maroon); }
     A visual representation of the people, places, relationships,
     strengths, concerns, and personal role that shape my chosen community.
   </p>
-  <p class="edit-note">
-    Editing guide: Click any text below to edit it. Replace each
-    instruction with your own actual observations. This diagram is a
-    template, not evidence about your community.
-  </p>
+
 
   <div class="portrait">
-    <h3 contenteditable="true">My Workplace Community at Beacon Services, Inc.</h3>
+    <h3 contenteditable="true">My ICT Community at San Mariano National High School MAIN</h3>
     <p contenteditable="true">
-      I consider my workplace at Beacon Services, Inc. a community because my role as a Virtual Assistant connects me with people who coordinate projects, share information, and depend on one another to complete work. My responsibilities include IT and network monitoring, marina research, organizing information for HubSpot, and researching inventory-management systems.
+      I consider the ICT community at San Mariano National High School MAIN meaningful because I learned technical skills there, served as ICT Club President, and used what I learned to help teachers and fellow students. The community gave me opportunities to lead, share knowledge, and contribute through practical ICT service.
     </p>
     <div class="portrait-grid">
 
       <div class="tile">
         <h3>01 · People and Groups</h3>
         <p contenteditable="true">
-          The workplace community includes supervisors and coworkers who assign, coordinate, review, and complete project tasks. My role is as a Virtual Assistant with IT-focused and research responsibilities. I should add other roles only if I know them from my own work experience.
+          The community included ICT Club officers and members, fellow students, teachers, and the school's ICT educators and adviser. As ICT Club President, I helped lead the club and support technology-related learning.
         </p>
       </div>
 
       <div class="tile">
         <h3>02 · Places and Institutions</h3>
         <p contenteditable="true">
-          Much of my work takes place in digital workspaces, including Slack, Google Sheets, HubSpot, and UniFi Site Manager. The marina facilities I research are part of the wider client-work context. These digital tools and client records help me carry out and organize assigned tasks.
+          Important spaces included the school's computer laboratory and ICT learning areas. The school, its teachers, ICT instructors, and the ICT Club provided the setting and resources for learning computer systems, troubleshooting, and office applications.
         </p>
       </div>
 
       <div class="tile">
         <h3>03 · Relationships and Practices</h3>
         <p contenteditable="true">
-          Work is coordinated through task instructions and Slack messages, with occasional calls or meetings. I use these communication channels to receive instructions, share progress, and clarify details when needed. This helps me stay connected with the team even when I am completing research and technical tasks independently.
+          The community connected through ICT Club activities, classroom learning, hands-on troubleshooting, and helping teachers with computer and printer problems. I also shared Microsoft Word, Excel, and PowerPoint skills with fellow students as they prepared for work immersion, and guided classmates and clubmates in computer repair and troubleshooting.
         </p>
       </div>
 
       <div class="tile">
         <h3>04 · Assets and Strengths</h3>
         <p contenteditable="true">
-          The community's work draws on technical knowledge, research, organization, digital communication, and shared online tools. I contribute skills in network-device monitoring, marina research, spreadsheet organization, HubSpot data preparation, and comparing inventory-system options. Team knowledge and established digital workflows are also useful resources.
+          The community's strengths included students' willingness to learn, shared technical knowledge, the computer laboratory, guidance from ICT teachers and the club adviser, and opportunities to practice computer systems servicing. I contributed by helping repair teachers' computers and printers, teaching office tools, and guiding peers through troubleshooting.
         </p>
       </div>
 
       <div class="tile">
         <h3>05 · Community Concerns</h3>
         <p contenteditable="true">
-          One challenge in my work is researching information that is difficult to verify. For example, available maps, network information, or company records may not always provide enough evidence to confirm a detail with confidence. This reminds me to distinguish between what I can verify and what remains uncertain, rather than presenting a guess as a fact. This is my experience with assigned tasks, not a claim that the whole company faces the same challenge.
+          A challenge in a student ICT community can be that learners have different levels of experience and may need different amounts of guidance when learning technical tasks. I will include only difficulties I actually observed, rather than making unsupported claims about the whole school.
         </p>
       </div>
 
@@ -278,7 +278,7 @@ footer strong { color: var(--maroon); }
       <div class="tile position">
         <h3>My Place in the Community</h3>
         <p contenteditable="true">
-          I am a Virtual Assistant at Beacon Services, Inc., supporting work that includes UniFi device monitoring, marina research, Google Reviews auditing, senior-living research, and inventory-system research. This role gives me opportunities to gain professional experience and become more independent in carrying out responsibilities. I contribute by completing assigned tasks, organizing information, and communicating when findings are uncertain or need clarification.
+          I was part of the ICT community at San Mariano National High School MAIN and served as ICT Club President. I helped guide clubmates and classmates in computer repair and troubleshooting, helped teachers with computer and printer issues, and taught fellow students office applications in preparation for work immersion. These experiences showed me how technical skills can support other people.
         </p>
       </div>
     </div>
@@ -290,6 +290,52 @@ footer strong { color: var(--maroon); }
   </p>
 </section>
 
+
+<section id="photo-evidence">
+  <div class="section-label">Photo Evidence</div>
+  <h2>Learning, Leadership, and Technical Service</h2>
+  <p class="intro">This gallery groups the photos you shared by the activities you described: ICT Club participation, technical support for teachers, teaching office tools for work immersion, and peer guidance in computer troubleshooting.</p>
+  <div class="card">
+    <h3>ICT Club and School Activities</h3>
+    <div class="photo-grid">
+      <img src="https://drive.google.com/uc?export=view&id=1821pN0X_1IIkU7MoyZ6NM2ECK6uhgz8a" alt="ICT Club activity photo 1" loading="lazy">
+      <img src="https://drive.google.com/uc?export=view&id=1e5vZRrdP-EMkc_V5cX2o0NcZZAfNRUMR" alt="ICT Club activity photo 2" loading="lazy">
+      <img src="https://drive.google.com/uc?export=view&id=1SYM9NpCtwRCS-qu_HUDViARew_N_W-sb" alt="ICT Club activity photo 3" loading="lazy">
+      <img src="https://drive.google.com/uc?export=view&id=1jAbmnoyruNtT4DZ-W8yw7UPJBNOUMIx1" alt="ICT Club activity photo 4" loading="lazy">
+    </div>
+    <p>Photos of my school ICT community and club participation.</p>
+  </div>
+  <div class="card">
+    <h3>Technical Support for Teachers</h3>
+    <div class="photo-grid">
+      <img src="https://drive.google.com/uc?export=view&id=1vMpMIm6yQJeCAmX3yd3Wpd-VX0usZdbd" alt="Teacher computer and printer support photo 1" loading="lazy">
+      <img src="https://drive.google.com/uc?export=view&id=1xYK6sDT_svRfY5v6BWn2EZitD7n96wmI" alt="Teacher computer and printer support photo 2" loading="lazy">
+    </div>
+    <p>Helping teachers with computer and printer issues.</p>
+  </div>
+  <div class="card">
+    <h3>Teaching Office Tools for Work Immersion</h3>
+    <div class="photo-grid">
+      <img src="https://drive.google.com/uc?export=view&id=19ya-hs6Hayki7iRR7SP_eSH4efMsSpkV" alt="Teaching Microsoft Office tools photo 1" loading="lazy">
+      <img src="https://drive.google.com/uc?export=view&id=1iT8Hrs973_TVTmH3SAb1Ob90MW4Hkhot" alt="Teaching Microsoft Office tools photo 2" loading="lazy">
+      <img src="https://drive.google.com/uc?export=view&id=1PrxKl2ZYyYR5TRChLJF-32lusYlufPuG" alt="Teaching Microsoft Office tools photo 3" loading="lazy">
+    </div>
+    <p>Teaching fellow students Microsoft Word, Excel, and PowerPoint to help prepare them for work immersion.</p>
+  </div>
+  <div class="card">
+    <h3>Peer Learning in Computer Troubleshooting</h3>
+    <div class="photo-grid">
+      <img src="https://drive.google.com/uc?export=view&id=1MHUtpUxO9l_a_l5s-7gMWysuq8P02ukS" alt="Guiding classmates in troubleshooting photo 1" loading="lazy">
+      <img src="https://drive.google.com/uc?export=view&id=1MFpnzbw3k6VoAKiwxQejhkyBcM541hMS" alt="Guiding classmates in troubleshooting photo 2" loading="lazy">
+      <img src="https://drive.google.com/uc?export=view&id=1MAYQE5jZc_Hp6ThJMFdsbddBEvNFcMGu" alt="Guiding classmates in troubleshooting photo 3" loading="lazy">
+      <img src="https://drive.google.com/uc?export=view&id=1M4jOeRPl-BMHd_szW3orlSSTKV13xvN-" alt="Guiding classmates in troubleshooting photo 4" loading="lazy">
+      <img src="https://drive.google.com/uc?export=view&id=1M3nWmOMFhT_KX_yquvHCF-rtQB39WZt2" alt="Guiding classmates in troubleshooting photo 5" loading="lazy">
+    </div>
+    <p>Guiding ICT Club members and classmates as they learn computer repair and troubleshooting.</p>
+  </div>
+  <p class="edit-note">Ensure each Google Drive photo is viewable by your intended audience. Get permission before publishing identifiable photos of teachers or classmates.</p>
+</section>
+
 <section id="reflection">
   <div class="section-label">Part 02</div>
   <h2>Citizenship and Community Reflection</h2>
@@ -298,9 +344,9 @@ footer strong { color: var(--maroon); }
     with an introduction, analysis, and conclusion. The headings below
     are prompts for organizing your own writing.
   </p>
-  <p class="edit-note">
-    Important: The prompts below are not a completed essay.
-    Write your own experiences, analysis, and conclusions in each section.
+  <p class="intro">
+    Develop this section into a coherent reflection using your own experiences,
+    analysis, and the ideas from CWTS 1 Modules 1 and 2.
   </p>
 
   <article class="reflection-part">

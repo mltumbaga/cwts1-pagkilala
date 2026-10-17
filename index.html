@@ -1,0 +1,436 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pagkilala | CWTS 1 ePortfolio</title>
+<style>
+:root {
+  --maroon: #7b2438;
+  --dark: #35151f;
+  --rose: #f5e9ec;
+  --cream: #fbf9f7;
+  --text: #30272a;
+  --muted: #766970;
+  --white: #fff;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.8;
+}
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background: var(--white);
+  border-bottom: 1px solid #eadde0;
+  padding: 12px 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.brand { font-weight: 800; color: var(--maroon); }
+nav a {
+  color: var(--text);
+  text-decoration: none;
+  margin-left: 16px;
+  font-size: .9rem;
+}
+nav a:hover { color: var(--maroon); }
+.hero {
+  background: linear-gradient(135deg, var(--dark), var(--maroon));
+  color: white;
+  padding: 90px 8% 85px;
+}
+.hero-inner, main, footer {
+  max-width: 1050px;
+  margin: auto;
+}
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: .8rem;
+  color: #f0cbd4;
+  font-weight: bold;
+}
+h1 {
+  font-family: Georgia, serif;
+  font-size: clamp(2.8rem, 7vw, 5rem);
+  line-height: 1.12;
+  margin: 15px 0;
+}
+.hero p { max-width: 650px; color: #f7e9ed; }
+.button {
+  display: inline-block;
+  padding: 12px 22px;
+  background: white;
+  color: var(--maroon);
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 15px;
+}
+main { padding: 30px 24px 70px; }
+section { padding: 50px 0; scroll-margin-top: 70px; }
+.section-label {
+  color: var(--maroon);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: .78rem;
+  font-weight: bold;
+}
+h2, h3 { font-family: Georgia, serif; }
+h2 { color: var(--maroon); font-size: 2.1rem; line-height: 1.3; }
+h3 { color: var(--dark); }
+.intro { color: var(--muted); max-width: 760px; }
+.card {
+  background: white;
+  padding: 26px;
+  border: 1px solid #eadde0;
+  border-radius: 12px;
+  margin: 22px 0;
+}
+.portrait {
+  background: white;
+  border: 2px dashed #cba7b1;
+  border-radius: 12px;
+  padding: 25px;
+}
+.portrait-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 20px;
+}
+.tile {
+  padding: 20px;
+  border-radius: 8px;
+  background: var(--rose);
+  min-height: 145px;
+}
+.tile h3 { margin-top: 0; }
+.tile p { margin-bottom: 0; font-size: .94rem; }
+.position {
+  grid-column: 1 / -1;
+  background: var(--maroon);
+  color: white;
+}
+.position h3 { color: white; }
+.edit-note {
+  font-size: .85rem;
+  color: var(--muted);
+  background: #fff9e9;
+  padding: 12px 16px;
+  border-radius: 6px;
+}
+[contenteditable="true"] {
+  outline-color: #b56a7e;
+}
+[contenteditable="true"]:focus {
+  outline: 2px dashed #b56a7e;
+  outline-offset: 3px;
+}
+.reflection-part {
+  border-left: 4px solid #cba7b1;
+  padding: 5px 0 5px 22px;
+  margin: 28px 0;
+}
+.reflection-part h3 { margin-bottom: 5px; }
+.placeholder { color: #8b6672; font-style: italic; }
+.checklist { list-style: none; padding: 0; }
+.checklist li { margin: 10px 0; }
+.checklist input { accent-color: var(--maroon); margin-right: 9px; }
+footer {
+  padding: 35px 24px;
+  border-top: 1px solid #eadde0;
+  color: var(--muted);
+  font-size: .9rem;
+}
+footer strong { color: var(--maroon); }
+@media(max-width:650px) {
+  nav { align-items: flex-start; flex-direction: column; }
+  nav a { margin: 0 12px 0 0; }
+  .hero { padding: 65px 24px; }
+  .portrait-grid { grid-template-columns: 1fr; }
+  .position { grid-column: auto; }
+  h2 { font-size: 1.7rem; }
+}
+@media print {
+  nav, .button, .edit-note { display: none; }
+  .hero { padding: 35px; }
+  section { break-inside: avoid; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="brand">CWTS 1 ePortfolio</div>
+  <div>
+    <a href="#portrait">Portrait</a>
+    <a href="#reflection">Reflection</a>
+    <a href="#references">References</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">Civil Welfare Training Service 1</div>
+    <h1>Pagkilala</h1>
+    <p style="font-size:1.2rem">
+      Citizenship and Community Reflection
+    </p>
+    <p>
+      An exploration of community membership, Filipino citizenship,
+      personal responsibility, and my starting point as an Iskolar ng Bayan.
+    </p>
+    <a class="button" href="#portrait">Explore my reflection ↓</a>
+  </div>
+</header>
+
+<main>
+<section id="about">
+  <div class="section-label">Introduction</div>
+  <h2>My Starting Point</h2>
+  <p class="intro">
+    This ePortfolio presents my understanding of the community I belong
+    to and how my experiences shape my understanding of citizenship.
+    It connects my observations of community life with my responsibilities,
+    personal goals, and potential contributions.
+  </p>
+  <div class="card">
+    <p><strong>Name:</strong> [Your full name]</p>
+    <p><strong>Program:</strong> [Your program]</p>
+    <p><strong>Course:</strong> CWTS 1</p>
+    <p><strong>Community featured:</strong> [Name your chosen community]</p>
+  </div>
+</section>
+
+<section id="portrait">
+  <div class="section-label">Part 01</div>
+  <h2>Community Portrait</h2>
+  <p class="intro">
+    A visual representation of the people, places, relationships,
+    strengths, concerns, and personal role that shape my chosen community.
+  </p>
+  <p class="edit-note">
+    Editing guide: Click any text below to edit it. Replace each
+    instruction with your own actual observations. This diagram is a
+    template, not evidence about your community.
+  </p>
+
+  <div class="portrait">
+    <h3 contenteditable="true">[Name of My Community]</h3>
+    <p contenteditable="true">
+      [Briefly identify the community and explain why you belong to it.]
+    </p>
+    <div class="portrait-grid">
+
+      <div class="tile">
+        <h3>01 · People and Groups</h3>
+        <p contenteditable="true" class="placeholder">
+          [Who belongs to this community? Identify relevant groups
+          and roles based on your observations.]
+        </p>
+      </div>
+
+      <div class="tile">
+        <h3>02 · Places and Institutions</h3>
+        <p contenteditable="true" class="placeholder">
+          [Identify important places, schools, organizations, offices,
+          or other institutions.]
+        </p>
+      </div>
+
+      <div class="tile">
+        <h3>03 · Relationships and Practices</h3>
+        <p contenteditable="true" class="placeholder">
+          [Describe how members interact, cooperate, participate,
+          or make decisions.]
+        </p>
+      </div>
+
+      <div class="tile">
+        <h3>04 · Assets and Strengths</h3>
+        <p contenteditable="true" class="placeholder">
+          [Describe existing skills, knowledge, relationships,
+          traditions, or resources.]
+        </p>
+      </div>
+
+      <div class="tile">
+        <h3>05 · Community Concerns</h3>
+        <p contenteditable="true" class="placeholder">
+          [Describe concerns you have actually observed. Identify
+          the concern without inventing facts or proposing solutions.]
+        </p>
+      </div>
+
+      <div class="tile">
+        <h3>06 · My Contribution and Limitation</h3>
+        <p contenteditable="true" class="placeholder">
+          [Identify one positive contribution you make and one habit,
+          limitation, or choice that can reduce your participation.]
+        </p>
+      </div>
+
+      <div class="tile position">
+        <h3>My Place in the Community</h3>
+        <p contenteditable="true">
+          [Explain your current role, your connection to other members,
+          and where you fit in this community.]
+        </p>
+      </div>
+    </div>
+  </div>
+  <p class="intro">
+    The portrait provides the context for my written reflection.
+    The strengths, relationships, and concerns shown here help me
+    examine what citizenship means in my own circumstances.
+  </p>
+</section>
+
+<section id="reflection">
+  <div class="section-label">Part 02</div>
+  <h2>Citizenship and Community Reflection</h2>
+  <p class="intro">
+    Target length: 1,200–1,500 words. Develop one coherent narrative
+    with an introduction, analysis, and conclusion. The headings below
+    are prompts for organizing your own writing.
+  </p>
+  <p class="edit-note">
+    Important: The prompts below are not a completed essay.
+    Write your own experiences, analysis, and conclusions in each section.
+  </p>
+
+  <article class="reflection-part">
+    <h3>01 · My Understanding of Citizenship</h3>
+    <p contenteditable="true" class="placeholder">
+      [Explain what citizenship means to you beyond legal status
+      or nationality. Consider its legal, social, moral, and
+      participatory dimensions, using course materials where relevant.]
+    </p>
+  </article>
+
+  <article class="reflection-part">
+    <h3>02 · My Experiences as a Filipino</h3>
+    <p contenteditable="true" class="placeholder">
+      [Reflect on how your family, education, culture, personal
+      experiences, and community have shaped your understanding
+      of being Filipino.]
+    </p>
+  </article>
+
+  <article class="reflection-part">
+    <h3>03 · Rights and Responsibilities</h3>
+    <p contenteditable="true" class="placeholder">
+      [Discuss which rights and responsibilities of citizenship
+      have become more meaningful to you after studying the modules.
+      Connect these ideas to your actual context.]
+    </p>
+  </article>
+
+  <article class="reflection-part">
+    <h3>04 · Understanding My Community</h3>
+    <p contenteditable="true" class="placeholder">
+      [Analyze the strengths and concerns shown in your Community
+      Portrait. Explain what you noticed, what you previously assumed,
+      and what your observations do and do not establish.]
+    </p>
+  </article>
+
+  <article class="reflection-part">
+    <h3>05 · My Goals and Responsibilities as an Iskolar ng Bayan</h3>
+    <p contenteditable="true" class="placeholder">
+      [Connect your personal goals, interests, skills, and values
+      with the citizen you want to become. Explain what being an
+      Iskolar ng Bayan means to you and what responsibilities
+      you associate with it.]
+    </p>
+  </article>
+
+  <article class="reflection-part">
+    <h3>06 · Pagtataya: Examining Myself</h3>
+    <p contenteditable="true" class="placeholder">
+      [Reflect on what pagtataya means to you at this stage of CWTS 1.
+      Identify an assumption that was affirmed, challenged, or
+      complicated. Consider your potential contributions and
+      the limitations or conditions you need to recognize.]
+    </p>
+  </article>
+
+  <article class="reflection-part">
+    <h3>07 · Conclusion: My Starting Point</h3>
+    <p contenteditable="true" class="placeholder">
+      [Bring your main insights together. Explain how your
+      understanding of citizenship has developed and what you
+      now recognize about your relationship with your community.]
+    </p>
+  </article>
+</section>
+
+<section id="references">
+  <div class="section-label">Supporting Materials</div>
+  <h2>References</h2>
+  <p class="intro">
+    List only sources you actually consulted and cited. Follow APA
+    7th edition for course readings, laws, videos, and other sources.
+  </p>
+  <div class="card">
+    <p contenteditable="true" class="placeholder">
+      [Add verified APA 7 references here. Do not invent authors,
+      titles, dates, URLs, or publication information.]
+    </p>
+  </div>
+
+  <h3>AI Use Disclosure</h3>
+  <div class="card">
+    <p contenteditable="true">
+      I used ChatGPT to suggest a webpage layout and organize the
+      sections of my ePortfolio. The community observations, personal
+      analysis, and final reflection are my own.
+    </p>
+    <p style="font-size:.85rem;color:#766970">
+      Edit this disclosure so it accurately describes how you used AI.
+    </p>
+  </div>
+</section>
+
+<section id="checklist">
+  <div class="section-label">Before Submission</div>
+  <h2>Final Review</h2>
+  <p>Use this checklist before publishing your Google Sites page.</p>
+  <div class="card">
+    <ul class="checklist">
+      <li><label><input type="checkbox"> My page is titled Pagkilala.</label></li>
+      <li><label><input type="checkbox"> My Community Portrait is one visual frame or page.</label></li>
+      <li><label><input type="checkbox"> My portrait covers all seven required dimensions.</label></li>
+      <li><label><input type="checkbox"> My reflection is approximately 1,200–1,500 words.</label></li>
+      <li><label><input type="checkbox"> My essay connects my portrait to course concepts and personal experience.</label></li>
+      <li><label><input type="checkbox"> My references follow APA 7 where applicable.</label></li>
+      <li><label><input type="checkbox"> My AI disclosure accurately describes my use of AI.</label></li>
+      <li><label><input type="checkbox"> I checked privacy, accuracy, and photo permissions.</label></li>
+      <li><label><input type="checkbox"> I published my Google Site and checked its sharing permissions.</label></li>
+    </ul>
+  </div>
+</section>
+</main>
+
+<footer>
+  <p><strong>Pagkilala · CWTS 1</strong></p>
+  <p>
+    Citizenship begins with understanding ourselves, recognizing
+    our place in a community, and reflecting honestly on our
+    responsibilities and limitations.
+  </p>
+  <p>Prepared by [Your Name] · [Academic Year]</p>
+</footer>
+</body>
+</html>
